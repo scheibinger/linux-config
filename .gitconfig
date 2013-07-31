@@ -1,0 +1,27 @@
+[user]
+  email = rscheibinger@ebay.com
+	name = Radoslaw Scheibinger
+[color]
+   diff = auto
+   status = auto
+   branch = auto
+   ui = true
+[alias]
+   st = status
+   co = checkout
+   d = diff
+   purr = pull --rebase
+   addi = add -i
+   adi = add -i
+   ci = commit
+   reflogr = reflog --date=relative
+   pom = push origin master
+
+   gitka = !gitk --all
+   serve = !git daemon --reuseaddr --verbose \
+        --base-path=. --export-all ./.git
+   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  
+   ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  
+   lasttag = describe --tags --abbrev=0
